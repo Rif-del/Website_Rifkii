@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header navbar navbar-expand-lg navbar-dark">
+        <h1>Rifki <span>Dot</span></h1>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <nav class="navbar-nav ms-auto">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About Me</a>
+                    <a href="#project" class="nav-link">Portofolio</a>
+                    <a href="#skill" class="nav-link">Skill</a>
+                    <a href="#inboxmy" class="nav-link">inbox Me</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="home d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="profile">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="home-content"> 
+                        <h1>Hi, It's <span>Rifki</span></h1>
+                        <h3 class="text-animation">I'm a <span>r</span></h3>
+                        <p>Saya seorang Mahasiswa Informatika di Universitas Islam Makassar yang menyukai desain seperti Ui/UX desain dan 
+                           coding yang brfokus pada frontend develeover</p>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/sandal_7ep1t/profilecard/?igsh=MTBxdGZiOWRncmJoaA=="><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@qi34dot"><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/rifki-rifki-b578b9247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Rif-del"><i class="bi bi-github"></i></a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div> 
+                
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="home-img">
+                        <img src="ikki.jpeg" alt="Profile Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="content-about">
+                <h2>About Me</h2>
+                <p>Saya Rifki, seorang mahasiswa Teknik Informatika di Universitas ismlam 
+                    makassar. Dengan latar belakang s tertarik dengan pengembangan web, khususnya PHP dan MySQL,
+                    saya berminat
+                    untuk terus belajar dan mengembangkan keterampilan saya di dunia teknologi.Saya juga pernah
+                    mengerjakan projek kreatif seperti desain logo
+                    dan desain grafis serta pengelolaan sosial media.</p>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <div class="container">
+            <h2 class="mb-5"><span>My</span> Project</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="Screenshot 2025-01-14 221023.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <p>Aplikasi manajemen keuangan masjid berbasis Laravel .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="dot.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <p>Proyek desain kreatif berbasis web untuk meningkatkan pengalaman pengguna.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+               
+                    <section class="skill" id="skill">
+                        <h2>Skills</h2>
+                        <div class="container-skill">
+                            <div class="card">
+                                <img class="skill-icon" src="logohtml.png" alt="Skill 1">
+                            
+                            </div>
+                            <div class="card">
+                                <img class="skill-icon" src="images-removebg-preview (2).png" alt="Skill 2">
+                                
+                            </div>
+                            <div class="card">
+                                <img class="skill-icon" src="mysql.webp" alt="Skill 3">
+                               
+                            </div>
+                            <div class="card">
+                                <img class="skill-icon" src="PHP-logo.svg.png" alt="Skill 3">
+                               
+                            </div>
+                            <div class="card">
+                                <img class="skill-icon" src="CSS-Logo.png" alt="Skill 3">
+                               
+                            </div>
+                        </div>
+                    </section>
+                    
+                   
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="inboxmy" class="inboxmy">
+        <div class="container">
+            <h2>inbox me</h2>
+            <form id="contactForm" class="contact-form" onsubmit="sendToWhatsApp(event)">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault(); // Prevent form submission
+    
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+    
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+            
+            // WhatsApp API URL
+            const whatsAppURL = `https://wa.me/+6285332755359?text=${encodedMessage}`;
+    
+            // Redirect to WhatsApp
+            window.location.href = whatsAppURL;
+        }
+    </script>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-contact">
+                    <div class="social-links text-center">
+                        <a href=""><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@qi34dot"><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/rifki-rifki-b578b9247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href=><i class="https://github.com/Rif-del"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
